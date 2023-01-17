@@ -1,0 +1,76 @@
+site_name: XDeepZeroX
+site_description: XDeepZeroX
+#site_url: https://xdeepzerox.github.io/XDeepZeroX
+
+theme:
+  name: material
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  logo: 'images/favicon.png'
+  favicon: 'images/icon.png'
+
+repo_name: XDeepZeroX
+repo_url: https://github.com/XDeepZeroX/XDeepZeroX
+
+nav:
+  - main(): 'index.md'
+  - Projects:
+      - projects/PersonnelAccounting.md
+  - Libraries:
+      - libraries/FastAPI Class Based.md
+#  - User Guide:
+#      - guides/install.md
+#      - guides/first_steps.md
+#      - guides/generics.md
+#  - Get Help: 'get_help.md'
+#  - Development - Contributing: 'development_contributing.md'
+#  - Release Notes: 'release_notes.md'
+
+docs_dir: gallery
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - markdown.extensions.codehilite:
+      guess_lang: false
+#  - markdown_include.include:
+#      base_path: gallery
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - codehilite
+  - extra
+  - tables
+  - smarty
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+plugins:
+  - glightbox
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/XDeepZeroX/XDeepZeroX
+
+extra_css:
+  - css/custom.css
+  - css/pygments.css
